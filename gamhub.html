@@ -1,0 +1,660 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   GamHub - Your Gaming Community
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Orbitron', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 shadow-md">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+     <a class="flex items-center space-x-2" href="#">
+      <img alt="GamHub logo, stylized GH letters in neon blue on black background" class="h-10 w-10 rounded-md" height="40" src="https://storage.googleapis.com/a1aa/image/8062cbcb-3ef0-4ec1-4b63-6d82acb38b6e.jpg" width="40"/>
+      <span class="text-2xl font-bold text-blue-500 tracking-wide">
+       GamHub
+      </span>
+     </a>
+     <div class="hidden md:flex space-x-8 text-gray-300">
+      <a class="hover:text-blue-500 transition" href="#">
+       Home
+      </a>
+      <a class="hover:text-blue-500 transition" href="#games">
+       Games
+      </a>
+      <a class="hover:text-blue-500 transition" href="#news">
+       News
+      </a>
+      <a class="hover:text-blue-500 transition" href="#community">
+       Community
+      </a>
+      <a class="hover:text-blue-500 transition" href="#store">
+       Store
+      </a>
+      <a class="hover:text-blue-500 transition" href="#contact">
+       Contact
+      </a>
+     </div>
+     <div class="md:hidden">
+      <button aria-label="Toggle menu" class="text-gray-300 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500" id="mobile-menu-button">
+       <i class="fas fa-bars fa-lg">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+   <div class="md:hidden hidden px-4 pb-4 space-y-2 bg-gray-800" id="mobile-menu">
+    <a class="block text-gray-300 hover:text-blue-500 transition" href="#">
+     Home
+    </a>
+    <a class="block text-gray-300 hover:text-blue-500 transition" href="#games">
+     Games
+    </a>
+    <a class="block text-gray-300 hover:text-blue-500 transition" href="#news">
+     News
+    </a>
+    <a class="block text-gray-300 hover:text-blue-500 transition" href="#community">
+     Community
+    </a>
+    <a class="block text-gray-300 hover:text-blue-500 transition" href="#store">
+     Store
+    </a>
+    <a class="block text-gray-300 hover:text-blue-500 transition" href="#contact">
+     Contact
+    </a>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <header class="relative bg-gray-900">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex flex-col md:flex-row items-center justify-between">
+    <div class="text-center md:text-left max-w-xl">
+     <h1 class="text-5xl md:text-6xl font-extrabold text-blue-500 mb-4 leading-tight">
+      Welcome to GamHub
+     </h1>
+     <p class="text-gray-300 text-lg md:text-xl mb-8">
+      Your ultimate destination for gaming news, reviews, and community.
+     </p>
+     <a class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition" href="#games">
+      Explore Games
+     </a>
+    </div>
+    <div class="mt-10 md:mt-0">
+     <img alt="A modern gaming setup with RGB lights, dual monitors showing game scenes, mechanical keyboard and gaming mouse on a sleek desk" class="rounded-lg shadow-lg mx-auto md:mx-0" height="350" src="https://storage.googleapis.com/a1aa/image/037be834-f47e-4cd4-e507-27548afc61d4.jpg" width="500"/>
+    </div>
+   </div>
+  </header>
+  <!-- Games Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="games">
+   <h2 class="text-4xl font-extrabold text-blue-500 mb-12 text-center">
+    Featured Games
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="Cyber City Racer game cover art showing futuristic neon-lit city with a sleek racing car speeding through streets" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/401e682a-14ad-4095-fe76-a0ad67e4ab1a.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       Cyber City Racer
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Race through neon-lit streets in this futuristic high-speed racing game.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="Fantasy Quest game cover art depicting a brave knight wielding a sword facing a dragon in a mystical forest" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/32a18673-ec73-41af-6e9f-08c5ffbd99d9.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       Fantasy Quest
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Embark on an epic journey through enchanted lands and battle mythical creatures.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="Space Frontier game cover art showing a spaceship flying through a colorful nebula with planets in the background" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/9a04fd58-01ab-4a36-2df6-601e7e1fb4a6.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       Space Frontier
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Explore distant galaxies and engage in thrilling space battles.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="Zombie Survival game cover art featuring a group of survivors fighting off zombies in a post-apocalyptic city" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/d15211ab-ae12-4bcc-9dda-8ac120f63eff.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       Zombie Survival
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Survive waves of zombies in this intense cooperative shooter.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="Magic Arena game cover art showing wizards casting spells in a magical arena with glowing runes" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/03718b6a-bef0-43f7-3d51-cf00a47069c9.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       Magic Arena
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Duel other players using powerful spells and magical creatures.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="Stealth Ops game cover art depicting a silhouette of a spy sneaking through a dark city rooftop at night" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/46ba35e5-83f7-434e-e6d9-734800489782.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       Stealth Ops
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Use stealth and gadgets to complete covert missions undetected.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="Battle Royale X game cover art showing a group of diverse characters armed and ready for battle on a large island map" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/47e20b3a-4993-4463-f2f1-d663994a4a0e.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       Battle Royale X
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Fight to be the last player standing in this fast-paced battle royale.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="RPG Legends game cover art featuring a group of heroes standing on a mountain cliff overlooking a vast fantasy world" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/b082ff7a-7618-4518-6d84-49359439e525.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       RPG Legends
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Create your hero and explore a vast open world full of quests and secrets.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="Arcade Blast game cover art showing colorful pixel art style characters blasting enemies in a retro arcade setting" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/c3bb9c64-de53-40d9-8070-5ced7cf34bc9.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       Arcade Blast
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Classic arcade action with modern twists and explosive gameplay.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="Mech Warriors game cover art depicting giant robots battling in a futuristic cityscape with explosions" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/5c71b69c-5348-4e55-4384-28a56bc001d6.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       Mech Warriors
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Pilot massive mechs and dominate the battlefield in intense combat.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="Puzzle Master game cover art showing colorful puzzle pieces floating in a glowing grid with a focused player silhouette" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/cee1606e-1f49-4b66-5549-6a0464887dd0.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       Puzzle Master
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Challenge your mind with hundreds of unique and challenging puzzles.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="Sports Champions game cover art featuring athletes competing in various sports like soccer, basketball, and tennis in a stadium" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/c6b02e8e-81a6-47d1-7ed3-812a4d3c762a.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       Sports Champions
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Compete in multiple sports and become the ultimate champion.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="City Builder Pro game cover art showing a sprawling futuristic city with skyscrapers, parks, and highways from a bird's eye view" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/d007fed8-c691-4dfd-c92a-b4232fdfbe5b.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       City Builder Pro
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Design and manage your dream city with advanced building tools.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="Flight Simulator X game cover art showing a commercial airplane flying above clouds with a sunset sky" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/5db21495-0268-4d85-6d93-5e037de79023.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       Flight Simulator X
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Experience realistic flight simulation with detailed aircraft and environments.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="Battle Tactics game cover art showing a top-down view of a battlefield with units moving strategically on a grid" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/a57cd6b2-1a61-4ec5-3bac-9fbf9f96d8af.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       Battle Tactics
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Command your army and outsmart your opponents in tactical battles.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="Virtual Reality Adventure game cover art showing a player wearing VR headset exploring a vibrant fantasy world" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/e6a0e605-143d-4922-a836-1646382d321f.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       Virtual Reality Adventure
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Dive into immersive VR worlds and experience adventures like never before.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+     <img alt="Kart Racing Championship game cover art showing colorful karts racing on a vibrant track with cheering crowds" class="w-full h-48 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/efd2c85a-3d2e-4290-9d8e-464471ec46ae.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold text-white mb-2">
+       Kart Racing Championship
+      </h3>
+      <p class="text-gray-400 text-sm mb-4">
+       Race with friends in fun and chaotic kart racing tournaments.
+      </p>
+      <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center" href="#">
+       Learn More
+       <i class="fas fa-arrow-right ml-2">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- News Section -->
+  <section class="bg-gray-800 py-16" id="news">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-4xl font-extrabold text-blue-500 mb-12 text-center">
+     Latest Gaming News
+    </h2>
+    <div class="space-y-12">
+     <article class="flex flex-col md:flex-row bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+      <img alt="Announcement banner for a new game release showing a futuristic warrior with glowing armor and weapons" class="w-full md:w-1/3 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/b876b097-af6f-4808-6123-e68caa5e4c03.jpg" width="400"/>
+      <div class="p-6 flex flex-col justify-between">
+       <div>
+        <h3 class="text-2xl font-semibold text-white mb-3">
+         New Game Release: Cyber City Racer 2
+        </h3>
+        <p class="text-gray-400 mb-4">
+         The highly anticipated sequel to Cyber City Racer is out now! Experience faster speeds, new tracks, and enhanced graphics.
+        </p>
+       </div>
+       <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center mt-2" href="#">
+        Read More
+        <i class="fas fa-arrow-right ml-2">
+        </i>
+       </a>
+      </div>
+     </article>
+     <article class="flex flex-col md:flex-row bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+      <img alt="Esports tournament highlights showing a packed stadium with players on stage and cheering fans" class="w-full md:w-1/3 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/ee66c2fb-b68e-402f-c747-0121991895a1.jpg" width="400"/>
+      <div class="p-6 flex flex-col justify-between">
+       <div>
+        <h3 class="text-2xl font-semibold text-white mb-3">
+         Esports Tournament: Battle Royale X Finals
+        </h3>
+        <p class="text-gray-400 mb-4">
+         Watch the thrilling finals of the Battle Royale X championship with top teams battling for the grand prize.
+        </p>
+       </div>
+       <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center mt-2" href="#">
+        Read More
+        <i class="fas fa-arrow-right ml-2">
+        </i>
+       </a>
+      </div>
+     </article>
+     <article class="flex flex-col md:flex-row bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+      <img alt="Game update patch notes showing a futuristic interface with code and game characters" class="w-full md:w-1/3 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/5c94e126-3c27-41ed-29f1-0772d57bda5a.jpg" width="400"/>
+      <div class="p-6 flex flex-col justify-between">
+       <div>
+        <h3 class="text-2xl font-semibold text-white mb-3">
+         Patch 1.5 Released for Fantasy Quest
+        </h3>
+        <p class="text-gray-400 mb-4">
+         New quests, bug fixes, and gameplay improvements are included in the latest update for Fantasy Quest.
+        </p>
+       </div>
+       <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center mt-2" href="#">
+        Read More
+        <i class="fas fa-arrow-right ml-2">
+        </i>
+       </a>
+      </div>
+     </article>
+     <article class="flex flex-col md:flex-row bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow">
+      <img alt="Community event announcement showing gamers gathered in a virtual space with avatars and chat bubbles" class="w-full md:w-1/3 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/5c1f4f98-dcd9-44e0-72cc-e7f3679e8697.jpg" width="400"/>
+      <div class="p-6 flex flex-col justify-between">
+       <div>
+        <h3 class="text-2xl font-semibold text-white mb-3">
+         Join Our Virtual Community Meetup
+        </h3>
+        <p class="text-gray-400 mb-4">
+         Connect with fellow gamers, participate in contests, and win exclusive prizes at our upcoming virtual meetup.
+        </p>
+       </div>
+       <a class="text-blue-500 hover:text-blue-400 font-semibold inline-flex items-center mt-2" href="#">
+        Read More
+        <i class="fas fa-arrow-right ml-2">
+        </i>
+       </a>
+      </div>
+     </article>
+    </div>
+   </div>
+  </section>
+  <!-- Community Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="community">
+   <h2 class="text-4xl font-extrabold text-blue-500 mb-12 text-center">
+    Join Our Community
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div class="bg-gray-800 rounded-lg shadow-lg p-8 flex flex-col items-center text-center hover:shadow-blue-600 transition-shadow">
+     <img alt="Icon representing a gaming forum with speech bubbles and chat icons in blue and gray" class="mb-6 rounded-full" height="120" src="https://storage.googleapis.com/a1aa/image/d64fe4ad-fe38-4521-372c-93d25be7239a.jpg" width="120"/>
+     <h3 class="text-2xl font-semibold text-white mb-3">
+      Forums
+     </h3>
+     <p class="text-gray-400 mb-6">
+      Discuss your favorite games, share tips, and connect with other gamers in our active forums.
+     </p>
+     <a class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg transition" href="#">
+      Visit Forums
+     </a>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg p-8 flex flex-col items-center text-center hover:shadow-blue-600 transition-shadow">
+     <img alt="Icon representing a Discord community with a stylized game controller and chat bubbles in blue" class="mb-6 rounded-full" height="120" src="https://storage.googleapis.com/a1aa/image/032cbda3-7bbb-4578-97bb-ddbc4f4bdc50.jpg" width="120"/>
+     <h3 class="text-2xl font-semibold text-white mb-3">
+      Discord
+     </h3>
+     <p class="text-gray-400 mb-6">
+      Join our Discord server for live chat, voice channels, and instant updates from the GamHub team.
+     </p>
+     <a class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg transition" href="#">
+      Join Discord
+     </a>
+    </div>
+    <div class="bg-gray-800 rounded-lg shadow-lg p-8 flex flex-col items-center text-center hover:shadow-blue-600 transition-shadow">
+     <img alt="Icon representing gaming events with a calendar and game controller in blue and gray" class="mb-6 rounded-full" height="120" src="https://storage.googleapis.com/a1aa/image/2d35a8d5-4c57-4ce2-0196-6cf83dda88ed.jpg" width="120"/>
+     <h3 class="text-2xl font-semibold text-white mb-3">
+      Events
+     </h3>
+     <p class="text-gray-400 mb-6">
+      Participate in tournaments, giveaways, and community events hosted regularly by GamHub.
+     </p>
+     <a class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg transition" href="#">
+      View Events
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- Store Section -->
+  <section class="bg-gray-800 py-16" id="store">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-4xl font-extrabold text-blue-500 mb-12 text-center">
+     GamHub Store
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+     <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow flex flex-col">
+      <img alt="High precision gaming mouse with RGB lighting on a black background" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/b556a81c-ae7b-43a8-9fe2-7a697aed8447.jpg" width="400"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold text-white mb-2">
+        Pro Gaming Mouse
+       </h3>
+       <p class="text-gray-400 mb-4 flex-grow">
+        Ergonomic design with customizable RGB lighting and high DPI sensor.
+       </p>
+       <div class="flex items-center justify-between">
+        <span class="text-blue-500 font-bold text-lg">
+         $49.99
+        </span>
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition">
+         Buy Now
+        </button>
+       </div>
+      </div>
+     </div>
+     <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow flex flex-col">
+      <img alt="Mechanical gaming keyboard with RGB backlighting and sleek black design" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/050d2fe4-f2f7-4840-f0ef-92f8a66f4663.jpg" width="400"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold text-white mb-2">
+        Mechanical Keyboard
+       </h3>
+       <p class="text-gray-400 mb-4 flex-grow">
+        Durable switches with customizable keys and vibrant RGB effects.
+       </p>
+       <div class="flex items-center justify-between">
+        <span class="text-blue-500 font-bold text-lg">
+         $89.99
+        </span>
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition">
+         Buy Now
+        </button>
+       </div>
+      </div>
+     </div>
+     <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow flex flex-col">
+      <img alt="Gaming headset with cushioned ear cups and microphone on a dark background" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/9961bb4d-c216-4dda-ccb3-8fc23582cf84.jpg" width="400"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold text-white mb-2">
+        Gaming Headset
+       </h3>
+       <p class="text-gray-400 mb-4 flex-grow">
+        Surround sound with noise-cancelling microphone for clear communication.
+       </p>
+       <div class="flex items-center justify-between">
+        <span class="text-blue-500 font-bold text-lg">
+         $69.99
+        </span>
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition">
+         Buy Now
+        </button>
+       </div>
+      </div>
+     </div>
+     <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-blue-600 transition-shadow flex flex-col">
+      <img alt="Ergonomic RGB gaming chair with adjustable armrests and headrest in black and blue colors" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/82e7c9d0-163e-48f6-fc5c-f45145f5e8b4.jpg" width="400"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold text-white mb-2">
+        RGB Gaming Chair
+       </h3>
+       <p class="text-gray-400 mb-4 flex-grow">
+        Comfortable chair with RGB lighting and adjustable features for long gaming sessions.
+       </p>
+       <div class="flex items-center justify-between">
+        <span class="text-blue-500 font-bold text-lg">
+         $199.99
+        </span>
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition">
+         Buy Now
+        </button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="contact">
+   <h2 class="text-4xl font-extrabold text-blue-500 mb-12 text-center">
+    Contact Us
+   </h2>
+   <div class="max-w-3xl mx-auto bg-gray-800 rounded-lg shadow-lg p-8">
+    <form action="#" class="space-y-6" method="POST">
+     <div>
+      <label class="block text-gray-300 font-semibold mb-2" for="name">
+       Name
+      </label>
+      <input class="w-full px-4 py-3 rounded-lg bg-gray-700 text-gray-100 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-gray-300 font-semibold mb-2" for="email">
+       Email
+      </label>
+      <input class="w-full px-4 py-3 rounded-lg bg-gray-700 text-gray-100 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-gray-300 font-semibold mb-2" for="message">
+       Message
+      </label>
+      <textarea class="w-full px-4 py-3 rounded-lg bg-gray-700 text-gray-100 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" id="message" name="message" placeholder="Write your message here..." required="" rows="5"></textarea>
+     </div>
+     <div class="text-center">
+      <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition" type="submit">
+       Send Message
+      </button>
+     </div>
+    </form>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8 mt-auto">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+    <p class="text-sm">
+     © 2024 GamHub. All rights reserved.
+    </p>
+    <div class="flex space-x-6 mt-4 md:mt-0">
+     <a aria-label="Facebook" class="hover:text-blue-500 transition" href="#">
+      <i class="fab fa-facebook fa-lg">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-blue-500 transition" href="#">
+      <i class="fab fa-twitter fa-lg">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-blue-500 transition" href="#">
+      <i class="fab fa-instagram fa-lg">
+      </i>
+     </a>
+     <a aria-label="YouTube" class="hover:text-blue-500 transition" href="#">
+      <i class="fab fa-youtube fa-lg">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
